@@ -83,3 +83,18 @@ function validation (userOBJ){
     }
 
 }
+function addMultyUser (){
+
+    document.querySelector('#closeBox').addEventListener('click' , (e)=>{
+
+        document.querySelector('#successfulBoxContainer').style.display = 'none';
+
+        document.querySelector('#emailAddressInput').value = '';
+        document.querySelector('#passwordInput').value = '';
+        document.querySelector('#passwordConfirmInput').value= '';
+        
+        e.preventDefault();
+
+    })
+
+}
