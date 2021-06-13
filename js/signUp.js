@@ -48,4 +48,38 @@ signUpform.addEventListener('submit' , (e)=> {
 })
 
 
+function validation (userOBJ){
 
+    if(userOBJ.email == ""){
+
+        userOBJ.errorMassage = 'Fill Email Address!'
+
+    }
+    else if(userOBJ.password == ""){
+
+        userOBJ.errorMassage = 'Fill Password!'
+
+    }
+    else if(userOBJ.password.length < 8){
+
+        userOBJ.errorMassage = 'the password is short (min = 8)';
+
+    }
+    else if(userOBJ.confirmPassword == ""){
+
+        userOBJ.errorMassage = 'Fill Confirm Password!'
+
+    }
+    else if(userOBJ.password != userOBJ.confirmPassword){
+
+        userOBJ.errorMassage = 'The passwords are not the same!'
+
+    }
+    else{
+
+        userOBJ.errorMassage = 'successful :)'
+        userOBJ.validateStatus = true;
+
+    }
+
+}
