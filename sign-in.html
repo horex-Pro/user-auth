@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="main-box">
+
+            <div class="form-box">
+                <h2>
+                    Sign in to Account!
+                </h2>
+
+               <div class="form-inner">
+                <form action="" id="signInForm">
+
+
+                    <label for="">Email Address</label>
+                    <input type="email" name="emailInput" placeholder="Enter You're Email...">
+
+                    <label for="">Password</label>
+                    <input type="password" name="password" placeholder="Enter You're Password...">
+
+
+
+                    <input type="submit" value="Sign in to You're Account">
+
+                    <span>
+
+                        have not an Account yet? ? <a href="sign-up.html"> Sign up</a>
+
+                    </span>
+
+                </form>
+               </div>
+
+            </div>
+
+            <div class="illustration-box">
+
+                <img src="images/gift-on-the-way.svg" alt="">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="error-box-container" id="errorBoxContainer">
+        <div class="error-box">
+
+            <img src="images/Error.svg">
+            <h2 id="errorBoxTile">Your info is incorrect</h2>
+            <a href="sign-in.html">
+                <button type="button">Go Back to Form!</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="loggedin-box-container" id="loggedInBoxContainer">
+        <div class="loggedin-box">
+
+            <img src="images/Done.svg">
+            <h2>Ok, Now You Logged in</h2>
+            <a href="https://amazon.com">
+                <button type="button">Discover our Website!</button>
+            </a>
+        </div>
+    </div>
+
+    
+
+    <script src="js/signIn.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    
+<main>
+    <div class="container">
+
+        <div class="main-box">
+
+            <div class="form-box">
+                <h2>
+                    Sign up For Free!
+                </h2>
+
+               <div class="form-inner">
+
+                <form action="" id="signUpform">
+
+
+                    <label for="">Email Address</label>
+                    <input type="email" name="emailAddressInput" id="emailAddressInput" placeholder="Enter You're Email...">
+
+                    <label for="">Password</label>
+                    <input type="password" name="passwordInput" id="passwordInput" placeholder="Enter You're Password...">
+
+                    <label for="">Confirm Password</label>
+                    <input type="password" id="passwordConfirmInput" placeholder="Re-Enter You're Password...">
+
+                    <input type="submit" id="signUpBtn" value="Sign up For Free">
+
+                    <span>
+
+                        Have An Account ? <a href="sign-in.html">  Login</a>
+
+                    </span>
+
+                </form>
+               </div>
+
+            </div>
+
+            <div class="illustration-box">
+
+                <img src="images/gift-on-the-way.svg" alt="">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="error-box-container" id="errorBoxContainer">
+        <div class="error-box">
+
+            <img src="images/Error.svg">
+            <h2 id="errorBoxTile">Some Thing Went Wrong!</h2>
+            <a href="sign-up.html">
+                <button type="button">Go Back to Form!</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="successful-box-container" id="successfulBoxContainer">
+        <div class="successful-box">
+
+            <img src="images/Done.svg">
+            <h2>successful!</h2>
+
+            <div class="button-box">
+
+                <a href="sign-in.html">
+                    <button type="button">Let's Go to Login Center!</button>
+                </a>
+                <a href="#" id="closeBox">
+                    <button type="button">close</button>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</main>
+
+
+<script type='text/javascript'>document.addEventListener('DOMContentLoaded', function () {window.setTimeout(document.querySelector('svg').classList.add('animated'),1000);})</script>
+
+    <script src="js/signUp.js"></script>
+
+</body>
+</html>
